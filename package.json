@@ -1,0 +1,46 @@
+{
+  "name": "fineractjs",
+  "version": "1.0.0",
+  "description": "Apache_Fineract_is_a_secure_multi_tenanted_microfinance_platformThe_goal_of_the_Apache_Fineract_API_is_to_empower_developers_to_build_apps_on_top_of_the_Apache_Fineract_PlatformbrThe__reference_app_https__cui_fineract_dev__username_mifos_password_password_works_on_the_same_demo_tenant_as_the_interactive_links_in_this_documentation__The_API_is_organized_around__REST_https__en_wikipedia_org_wiki_Representational_state_transfer__Find_out_more_about_Apache_Fineract__here__fineract_provider_api_docs_apiLive_htmtop__You_can__Try_The_API_From_Your_Browser__fineract_provider_api_docs_apiLive_htminteract__The_Generic_Options_are_available__here__fineract_provider_api_docs_apiLive_htmgenopts__Find_out_more_about__Updating_Dates_and_Numbers__fineract_provider_api_docs_apiLive_htmdates_and_numbers__For_the_Authentication_and_the_Basic_of_HTTP_and_HTTPS_refer__here__fineract_provider_api_docs_apiLive_htmauthentication_overview__Check_about_ERROR_codes__here__fineract_provider_api_docs_apiLive_htmerrorsPlease_refer_to_the__old_documentation__fineract_provider_api_docs_apiLive_htm_for_any_documentation_queries",
+  "license": "Apache 2.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "prepack": "npm run build",
+    "test": "mocha --require @babel/register --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "superagent": "3.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
